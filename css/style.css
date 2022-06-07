@@ -49,3 +49,14 @@ ul li ul.dropdown li {
 }
 
 
+main {
+    display: flex;
+    
+    height: 100vh;
+}
+
+.main-logo{
+    border: 3px red solid;
+    height: 300px;
+    width: 300px;
+}
