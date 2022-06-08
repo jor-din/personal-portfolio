@@ -1,10 +1,16 @@
 body {
     font-family: 'Cormorant Garamond', serif;
+    background-color: #DCE6F4;
 }
 
 ul{
     padding: 0;
     list-style: none;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
 }
 
 .nav-list {
@@ -30,6 +36,7 @@ ul.nav-list li a {
 
 ul.nav-list li a:hover {
     color: blueviolet;
+    text-decoration: underline;
 }
 
 ul.nav-list li ul.dropdown {
@@ -51,12 +58,64 @@ ul li ul.dropdown li {
 
 main {
     display: flex;
-    
     height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .main-logo{
-    border: 3px red solid;
+    display: flex;
+    border: 3px blue solid;
     height: 300px;
     width: 300px;
+    flex-direction: column;
+    
 }
+
+h2 .main{
+    text-align: center;
+}
+
+#bio-img{
+    border: 3px red solid;
+    
+}
+
+.about-bio {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-text {
+    max-width:60ch;
+}
+
+#resume-page{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.about-resume {
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.social-resume-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.resume-social a,
+.resume-social li{
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 auto;
+}
+

@@ -10,17 +10,17 @@
     <title>Jordin Huang</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav id="navbar">
         <div id="logo-home">Logo-Home</div>
         <ul class="nav-list">
-            <li><a href="">Works</a></li>
-            <li><a href="">About</a>
+            <li class="nav-link"><a href="">Works</a></li>
+            <li class="nav-link"><a href="">About</a>
                 <ul class="dropdown">
                     <li><a href="">Bio</a></li>
                     <li><a href="">Resume</a></li>
                 </ul>
             </li>
-            <li><a href="">Contact</a></li>
+            <li class="nav-link"><a href="">Contact</a></li>
         </ul>
     </nav>
 
@@ -30,19 +30,24 @@
     </main>
 
     <section class="about-bio">
-        <img src="" alt="Picture of Jordin">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat earum deserunt ut enim mollitia veniam maxime est quam, doloremque tenetur nihil quod inventore alias sunt vitae quaerat voluptates ab repudiandae!</p>
+        <img id="bio-img" src="" alt="Picture of Jordin">
+        <div class="about-text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat earum deserunt ut enim mollitia veniam maxime est quam, doloremque tenetur nihil quod inventore alias sunt vitae quaerat voluptates ab repudiandae!</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore aspernatur libero quasi porro ratione tempora, quibusdam laboriosam sunt voluptates corporis magni provident, illum tenetur, magnam accusamus molestias dolorem iusto mollitia.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore repellat, numquam quasi illum dolorem et. Laborum facere quibusdam blanditiis, voluptatibus in, quam similique explicabo minus, ea repudiandae necessitatibus aperiam rem.</p>
         <a id="resume-page" href="">Resume</a>
+        </div>
+        
     </section>
 
     <section class="about-resume">
         <div class="social-resume-top">
-            <li id="linkedin-resume"><a href="">LinkedIn</a></li>
-            <li id="github-resume"><a href="">Github</a></li>
+            <div class="resume-social">
+                <li id="linkedin-resume"><a href="">LinkedIn</a></li>
+                <li id="github-resume"><a href="">Github</a></li>
+            </div>
             <h1>Jordin Huang</h1>
-            <a id="resume-pdf" href="" download>PDF</a>
+            <div class="resume-social"><a id="resume-pdf" href="" download>PDF</a></div>
         </div>
         <div class="resume-education">
             <h3>Education</h3>
