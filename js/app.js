@@ -20,3 +20,28 @@ let projectMarkup = projectData.map(project =>
     ).join('')
 
 cardContainer.innerHTML = projectMarkup
+
+let topButton = document.getElementById('up-btn')
+topButton.addEventListener("click", backToTop);
+
+window.onscroll = function (){
+    scrollFunction();
+}
+
+function scrollFunction() {
+    if (
+      document.body.scrollTop > 30 ||
+      document.documentElement.scrollTop > 30
+    ) {
+      topButton.style.display = "block";
+    } else {
+      topButton.style.display = "none";
+    }
+  }
+
+
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
