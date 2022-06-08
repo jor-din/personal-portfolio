@@ -1,8 +1,11 @@
 body {
-    font-family: 'Cormorant Garamond', serif;
-    background-color: #DCE6F4;
+    font-family: 'Playfair Display', serif;
+    background-color: #F6F6F5;
 }
 
+a {
+    color: #eadbcd;
+}
 ul{
     padding: 0;
     list-style: none;
@@ -11,12 +14,20 @@ ul{
 #navbar {
     position: sticky;
     top: 0;
+    background-color: #354d4d;  
+}
+#logo-home {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 25px;
+    font-size: 50px;
 }
 
 .nav-list {
     display: flex;
-    justify-content: flex-end;
-    margin: 0;
+    justify-content: space-evenly;
+    margin: 0 auto;
 }
 
 ul.nav-list li {
@@ -35,8 +46,8 @@ ul.nav-list li a {
 
 
 ul.nav-list li a:hover {
-    color: blueviolet;
     text-decoration: underline;
+    color: #d29A5d;
 }
 
 ul.nav-list li ul.dropdown {
@@ -58,89 +69,83 @@ ul li ul.dropdown li {
 
 main {
     display: flex;
-    height: 100vh;
+    height: 50vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #354d4d;
 }
 
-.main-logo{
-    display: flex;
-    border: 3px blue solid;
-    height: 300px;
-    width: 300px;
-    flex-direction: column;
-    
-}
 
-h2 .main{
+.main-page{
     text-align: center;
+    color: #eadbcd;
 }
 
-#bio-img{
-    border: 3px red solid;
-    
-}
 
-.about-bio {
-    min-height: 100vh;
+.about-section {
+    background-color: #eadbcd;
+    height: 70vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
     align-items: center;
-}
-
-.about-text {
-    max-width:60ch;
-}
-
-#resume-page{
-    display: flex;
     justify-content: center;
-    text-decoration: none;
 }
 
-.about-resume {
-    background-color: linen;
-    margin: 70px;
-    padding: 50px;
-}
-
-.social-resume-top{
+img.main-logo{
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    border: 1px black solid;
+    height: 400px;
+    width: 400px;
+    border-top-left-radius:200px;
+    border-top-right-radius:200px;
 }
-
-.resume-social a,
-.resume-social li{
-    display: inline;
-    list-style: none;
-    text-decoration: none;
+#about-text {
     padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
+#about-text p{
+    width: 65ch;
+    font-size: 18px;
+}
 
-.resume-body {
+#card-container{
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-social{
+    display: flex;
+    align-items: baseline;
+    align-content: center;
+    justify-content: center;
+}
+
+.works-page {
+    display: flex;
+    display: flex;
+    align-content: center; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    justify-items: baseline;
+    height: 100vh;
+    background-color: #f4ece7;
+}
+
+.works-page h1 {
     flex-direction: row;
-    justify-content: space-around;
-    column-gap: 30px;
+    color: #eadbcd;
+    background-color:#354d4d;
+   
 }
 
-.left-section {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    border: yellow solid;
-    max-width: 100ch;
-    
+#works-title h1{
+    height: 450px;
+    width: 300px;
 }
 
-
-.right-section{
-    display: flex;
-    flex-direction: column;
-    align-content: end;
-    border: yellow solid;
-    max-width: 80ch;
-}
