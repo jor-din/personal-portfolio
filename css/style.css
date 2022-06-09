@@ -11,6 +11,11 @@ ul{
     list-style: none;
 }
 
+
+ul.nav-list.show{
+    display: block;
+}
+
 #navbar {
     position: sticky;
     top: 0;
@@ -68,6 +73,12 @@ ul.nav-list li:hover ul.dropdown {
 ul li ul.dropdown li {
     display: block;
 }
+
+.hamburger{
+    display: none;
+}
+
+
 
 
 main {
@@ -161,3 +172,42 @@ main {
     border: none;
 }
 
+@media only screen and (max-width: 1024px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: black;
+        color: #eadbcd;
+        font-size: large;
+    }
+
+    ul.nav-list {
+        display: none;
+        margin: 0px;
+    }
+
+    nav {
+        align-items: flex-start;
+    }
+
+    h2{
+        font-size: 10%;
+    }
+    .main-page{
+        height: 100vh;
+    }
+    p {
+        font-size: small;
+        font-weight: 200;
+    }
+      
+ }
+
+
+ @media only screen and (max-width: 768px) {
+    .main-logo{
+        margin-top: 10px;
+        height: 300px;
+        width: 300px;
+    }
+ }
