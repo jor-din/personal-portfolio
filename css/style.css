@@ -74,11 +74,59 @@ ul li ul.dropdown li {
     display: block;
 }
 
-.hamburger{
+
+  #menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #eadbcd;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
     display: none;
-}
-
-
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: #eadbcd;;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
 
 
 main {
@@ -160,7 +208,6 @@ main {
 }
 
 
-
 #up-btn {
     display: none;
     position: fixed;
@@ -172,14 +219,57 @@ main {
     border: none;
 }
 
+#menu {
+    display: none;
+}
+
 @media only screen and (max-width: 1024px) {
-    .hamburger {
+
+    #menu{
         display: block;
-        border: 0;
-        background-color: black;
-        color: #eadbcd;
-        font-size: large;
+        z-index: 80;
     }
+    .menu-bg, #menu {
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+      
+      .menu-bg {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        margin: 30px 0 20px 20px;
+      }
+      
+      .change {
+        display: block;
+      }
+      .nav li {
+          z-index: 99;
+          color: #eadbcd;
+      }
+      .change .bar {
+        background-color: #eadbcd;
+      }
+      
+      .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+      }
+      
+      .change #bar2 {
+        opacity: 0;
+      }
+      
+      .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+      }
+      
+      .change-bg {
+        width: 520px;
+        height: 460px;
+        transform: translate(-60%,-30%);
+      }
 
     ul.nav-list {
         display: none;

@@ -45,11 +45,14 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-const hamburgerButton = document.getElementById('hamburger')
-const navList = document.querySelector('nav-list')
 
-function toggleButton() {
-    navList.classList.toggle('show')
-}
+
+const hamburgerButton = document.getElementById('menu')
 
 hamburgerButton.addEventListener('click', toggleButton)
+
+function toggleButton() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}

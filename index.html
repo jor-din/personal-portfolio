@@ -25,19 +25,32 @@
         <ul class="nav-list">
             <li><a href="">About</a>
                 <ul class="dropdown">
-                    <li><a href="#about-me">Bio</a></li>
-                    <li><a href="/assets/Jordin Huang - Resume.pdf" target="_blank">Resume</a></li>
+                    <li class="ndd"><a href="#about-me">Bio</a></li>
+                    <li class="ndd"><a href="/assets/Jordin Huang - Resume.pdf" target="_blank">Resume</a></li>
                 </ul>
             </li>
             <li><a href="#works">Works</a></li>
         
-            <li><a href="">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="hamburger" id="hamburger">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-        </button>
+
+        <div id="menu">
+            <div id="menu-bar">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="#about-me">Bio</a></li>
+                <li><a href="/assets/Jordin Huang - Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav> 
+          </div>
+          
+          <div class="menu-bg" id="menu-bg"></div>
     </nav>
 
     <main class="main-page">
@@ -76,5 +89,8 @@
     <div id="card-container"></div>
    </div>
 
+   <div class="contact" id="contact">
+       <h1 ></h1>
+   </div>
 </body>
 </html>
