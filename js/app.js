@@ -21,7 +21,7 @@ let projectMarkup = projectData.map(project =>
 
 cardContainer.innerHTML = projectMarkup
 
-let topButton = document.getElementById('up-btn')
+const topButton = document.getElementById('up-btn')
 topButton.addEventListener("click", backToTop);
 
 window.onscroll = function (){
@@ -38,7 +38,6 @@ function scrollFunction() {
       topButton.style.display = "none";
     }
   }
-
 
 
 function backToTop() {
