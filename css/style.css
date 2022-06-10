@@ -207,6 +207,54 @@ main {
     justify-items: baseline;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-color: #354d4d;
+}
+
+.form-title{
+    color: #eadbcd;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.form-title {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+label {
+    color: #eadbcd;
+}
+
+label.col-form-label {
+    font-size: 20px;
+}
+
+
+#name, #email, #textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.submit-btn{
+    border-radius: 15px;
+    background-color: #e1b996;
+    color: #354d4d;
+    margin: 12px;
+}
 
 #up-btn {
     display: none;
