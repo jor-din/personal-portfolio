@@ -247,7 +247,6 @@ main {
       }
       .nav li {
           z-index: 99;
-          color: #eadbcd;
       }
       .change .bar {
         background-color: #eadbcd;
@@ -276,9 +275,6 @@ main {
         margin: 0px;
     }
 
-    nav {
-        align-items: flex-start;
-    }
 
     h2{
         font-size: 10%;

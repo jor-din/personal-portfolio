@@ -26,7 +26,9 @@ topButton.addEventListener("click", backToTop);
 
 window.onscroll = function (){
     scrollFunction();
+    scrollColor();
 }
+
 
 function scrollFunction() {
     if (
@@ -46,8 +48,8 @@ function backToTop() {
 }
 
 
-
 const hamburgerButton = document.getElementById('menu')
+const burgerBar = document.getElementsByClassName('bar')
 
 hamburgerButton.addEventListener('click', toggleButton)
 
@@ -56,3 +58,14 @@ function toggleButton() {
   document.getElementById("nav").classList.toggle("change");
   document.getElementById("menu-bg").classList.toggle("change-bg");
 }
+
+function scrollColor() {
+    if (
+      document.body.scrollTop > 30 ||
+      document.documentElement.scrollTop > 30
+    ) {
+      burgerBar.style.color = "#354d4d";
+    } else {
+      burgerBar.style.color = "#eadbcd";
+    }
+};
