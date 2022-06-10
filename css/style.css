@@ -40,6 +40,7 @@ ul.nav-list li {
     list-style: none;
     display: inline-block;
     position: relative;
+    font-size: 25px;
     line-height: 21px;
     text-decoration: none;
 }
@@ -427,11 +428,13 @@ label.col-form-label {
       margin: 0px;
   }
 
-
+  #nav li a{
+    font-size: 15px;
+  }
   .about-text{
     width: 100%;
   }
-  .about-text p{
+  #about-text p{
     display: block;
     overflow-wrap: break-word;
     max-width: 100%;
@@ -454,18 +457,28 @@ label.col-form-label {
 
 
 @media only screen and (max-width: 768px) {
+  .main-page{
+    height: 100vh;
+  }
   .main-logo{
       height: 300px;
       width: 300px;
   }
-  
-  .about-text p{
+
+  .about-section{
+    height: 100vh;
+  }
+
+  .main-img img {
+    margin: 0;
+  }
+
+  #about-text p{
     display: block;
     overflow-wrap: break-word;
     max-width: 100%;
-    font-weight: 200;
-    font-size: 9px;
   }
+ 
   .contact {
     height: 70vh;
   }
