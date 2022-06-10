@@ -8,7 +8,7 @@
 ![main-page-screen](https://user-images.githubusercontent.com/87043491/173003609-bea87155-79c2-4671-aae7-21633c64edab.png)
 [Portflio Link](https://jordinhuang.netlify.app/)
 
-## Technology Used 
+## 👩🏻‍💻Technology Used 
 - CSS
 - HTML
 - JavaScript
