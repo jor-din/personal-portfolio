@@ -84,6 +84,7 @@ ul li ul.dropdown li {
     height: 40px;
     margin: 30px 0 20px 20px;
     cursor: pointer;
+    background-color: #354d4d;
   }
   
   .bar {
@@ -143,6 +144,7 @@ main {
     text-align: center;
     color: #eadbcd;
 }
+
 
 #title-home {
     font-size:60px;
@@ -206,6 +208,8 @@ main {
     justify-content: center;
     justify-items: baseline;
 }
+
+
 
 .contact {
     display: flex;
@@ -272,11 +276,30 @@ label.col-form-label {
 }
 
 @media only screen and (max-width: 1024px) {
-
     #menu{
         display: block;
         z-index: 80;
     }
+
+   .about-section{
+       height: 100vh;
+   } 
+    #title-home {
+        font-size:50px;
+    }
+    .main-page h2 {
+        font-size: 20px;
+
+    }
+
+    .works-page{
+        height: 100vh;
+    }
+
+    .contact{
+        height: 50vh;
+    }
+
     .menu-bg, #menu {
         top: 0;
         left: 0;

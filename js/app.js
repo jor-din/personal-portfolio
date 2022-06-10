@@ -29,7 +29,6 @@ window.onscroll = function (){
     scrollColor();
 }
 
-
 function scrollFunction() {
     if (
       document.body.scrollTop > 30 ||
@@ -49,7 +48,7 @@ function backToTop() {
 
 
 const hamburgerButton = document.getElementById('menu')
-const burgerBar = document.getElementsByClassName('bar')
+// const burgerBar = document.getElementsByClassName('bar')
 
 hamburgerButton.addEventListener('click', toggleButton)
 
@@ -59,13 +58,13 @@ function toggleButton() {
   document.getElementById("menu-bg").classList.toggle("change-bg");
 }
 
-function scrollColor() {
-    if (
-      document.body.scrollTop > 30 ||
-      document.documentElement.scrollTop > 30
-    ) {
-      burgerBar.style.color = "#354d4d";
-    } else {
-      burgerBar.style.color = "#eadbcd";
-    }
-};
+// function scrollColor() {
+//     if (
+//       document.body.scrollTop > 950 ||
+//       document.documentElement.scrollTop > 950
+//     ) {
+//       burgerBar.style.backgroundColor = "#354d4d";
+//     } else {
+//       burgerBar.style.color = "#eadbcd";
+//     }
+// };
