@@ -2,7 +2,7 @@ let projectData = [
     {
         title: 'Tic-Tac-Toe' , 
         deployment:'https://ttt-jordinh.netlify.app/',
-        image: '/assets/tic-tac-toe.png',
+        image: '/assets/ttt-landing.png',
         github:'https://github.com/jor-din/ttt-weekend',
         description: 'A Tic-Tac-Toe broswer game built with CSS, HTML, JavaScript'
     },
