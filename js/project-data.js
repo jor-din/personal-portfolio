@@ -12,7 +12,8 @@ let projectData = [
         image: '/assets/wl-landing page.png',
         github:'https://github.com/jor-din/powerlift-tracker',
         description: 'A workout tracker built with MEN-stack'
-    }
+    },
+    
 ]
 
 

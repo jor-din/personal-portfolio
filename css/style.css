@@ -4,13 +4,15 @@ body {
 }
 
 a {
-    color: #eadbcd;
+    color: #e4d4bc;
+    text-decoration: none;
 }
+
 ul{
+    color: #e4d4bc;
     padding: 0;
     list-style: none;
 }
-
 
 ul.nav-list.show{
     display: block;
@@ -19,7 +21,7 @@ ul.nav-list.show{
 #navbar {
     position: sticky;
     top: 0;
-    background-color: #354d4d; 
+    background-color: #3d544a; 
     z-index: 99; 
 }
 #logo-home {
@@ -55,7 +57,7 @@ ul.nav-list li a {
 ul.nav-list li a:hover {
     text-decoration: underline;
     color: #d29A5d;
-    box-shadow: #eadbcd;
+    box-shadow: #e4d4bc;
 }
 
 ul.nav-list li ul.dropdown {
@@ -64,7 +66,7 @@ ul.nav-list li ul.dropdown {
     position: absolute;
     z-index: 999;
     left: 0;
-    background-color: #354d4d;
+    background-color: #3d544a;
 }
 
 ul.nav-list li:hover ul.dropdown {
@@ -175,7 +177,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #354d4d;
+  background-color: #3d544a;
 }
 
 
@@ -183,7 +185,6 @@ main {
   text-align: center;
   color: #eadbcd;
 }
-
 
 #title-home {
   font-size:100px;
@@ -200,7 +201,7 @@ main {
 }
 
 .about-section {
-  background-color: #eadbcd;
+  background-color: #e4d4bc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -255,21 +256,22 @@ main {
   padding: 10px;
 }
 
-.h1,
 h1 {
 font-size: 51px;
 }
 
-#card-container{
+.card-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
   align-items: center;
   justify-content: center;
-  justify-items: baseline; 
+  justify-items: baseline;
 }
 
 .btn-primary {
 background-color: #d29A5d;
-color: #354d4d;
+color: #3d544a;
 font-weight: 300;
 border: none;
 }
@@ -281,8 +283,8 @@ border: none;
 }
 
 .btn-secondary{
-background-color: #eadbcd;
-color:#354d4d;
+background-color: #e4d4bc;
+color:#3d544a;
 border: none;
 }
 
@@ -298,11 +300,11 @@ border: none;
   align-items: center;
   justify-content: center;
   height: 40vh;
-  background-color: #354d4d;
+  background-color: #3d544a;
 }
 
 .form-title{
-  color: #eadbcd;
+  color: #e4d4bc;
   display: flex;
   align-content: flex-start;
   align-items: center;
@@ -319,7 +321,7 @@ h1.form-title {
 }
 
 label {
-  color: #eadbcd;
+  color: #e4d4bc;
 }
 
 label.col-form-label {
@@ -337,7 +339,7 @@ label.col-form-label {
 .submit-btn{
   border-radius: 15px;
   background-color: #e1b996;
-  color: #354d4d;
+  color: #3d544a;
   padding: 5px;
   border: none;
 }
@@ -348,8 +350,8 @@ label.col-form-label {
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  color: #eadbcd;
-  background-color: #354d4d;
+  color: #e4d4bc;
+  background-color: #3d544a;
   border: none;
 }
 
@@ -402,7 +404,7 @@ label.col-form-label {
         z-index: 99;
     }
     .change .bar {
-      background-color: #eadbcd;
+      background-color: #e4d4bc;
     }
     
     .change #bar1 {
@@ -454,7 +456,6 @@ label.col-form-label {
   }
     
 }
-
 
 @media only screen and (max-width: 768px) {
   .main-page{
